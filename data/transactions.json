@@ -1,0 +1,18 @@
+[
+  {
+    "id": "a3a85bc2-d8e3-4f21-bdcf-d762895e3c03",
+    "account ID": "123",
+    "type": "deposit",
+    "amount": 100,
+    "result transaction": 100,
+    "created at": "2025-12-22T17:21:57.7459525+03:00"
+  },
+  {
+    "id": "5053c69e-cbda-442e-958d-cfc955458e27",
+    "account ID": "123",
+    "type": "withdraw",
+    "amount": 50,
+    "result transaction": 50,
+    "created at": "2025-12-22T17:21:57.9097205+03:00"
+  }
+]

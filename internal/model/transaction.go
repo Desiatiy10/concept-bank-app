@@ -1,0 +1,26 @@
+package model
+
+import (
+	"time"
+
+	"github.com/google/uuid"
+)
+
+type TransactionType string
+
+const (
+	DepositTx  TransactionType = "deposit"
+	WithdrawTx TransactionType = "withdraw"
+)
+
+type Transaction struct {
+	ID                string          `json:"id"`
+	AccountID         string          `json:"account_id"`
+	Type              TransactionType `json:"type"`
+	Amount            float64         `json:"amount"`
+	CreatedAt         time.Time       `json:"created_at"`
+}
+
+func GenerateTransationID() string {
+	return uuid.New().String()
+}

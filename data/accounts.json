@@ -1,0 +1,12 @@
+[
+  {
+    "ID": "123ABC",
+    "Owner": "Anton Mikhalev",
+    "Balance": 1000
+  },
+  {
+    "ID": "123",
+    "Owner": "Stas",
+    "Balance": 50
+  }
+]
