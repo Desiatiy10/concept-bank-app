@@ -20,19 +20,10 @@ func main() {
 
 	svc := service.NewService(repo)
 
-	if err := repo.Save(acc); err == nil {
-		fmt.Printf("Сохранен аккаунт: %v\n", acc.ID)
-	} else {
-		fmt.Printf("Ошибка: %v\n", err)
+	if err := svc.Deposit(acc.ID, 10); err != nil {
+		fmt.Printf("Ошибка Deposit: %v\n", err)
 	}
-	if err := svc.Deposit(acc.ID, 100); err == nil {
-		fmt.Printf("Ошибка: %v\n", err)
-	} else {
-		fmt.Printf("Баланс на аккаунте %v изменен. +%d\n", acc.ID, 100)
-	}
-	if err := svc.Withdraw(acc.ID, 50); err == nil {
-		fmt.Printf("Баланс на аккаунте %v изменен. -%d\n", acc.ID, 50)
-	} else {
-		fmt.Printf("Ошибка: %v\n", err)
+	if err := svc.Withdraw(acc.ID, 1); err != nil {
+		fmt.Printf("Ошибка Withdraw: %v\n", err)
 	}
 }
