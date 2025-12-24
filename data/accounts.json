@@ -2,11 +2,11 @@
   {
     "ID": "123ABC",
     "Owner": "Anton Mikhalev",
-    "Balance": 1000
+    "Balance": 202000
   },
   {
     "ID": "123",
     "Owner": "Stas",
-    "Balance": 50
+    "Balance": 10.1
   }
 ]
